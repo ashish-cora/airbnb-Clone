@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="top-header">
+        <u> Learn about Guest Favorites, the most loved homes on Airbnb </u>
+      </div>
+      <header class="bot-header">
+        <div class="bot-header-first-row">
+          <div class="header-logo">
+            <img
+              src="airbnb.png"
+              alt="airbnb logo"
+              width="105px"
+              height="35px"
+            />
+          </div>
+          <div class="header-options">
+            <div class="header-options__menu" id="header-options__firstMenu">
+              Stays
+            </div>
+            <div class="header-options__menu" id="header-options__secondMenu">
+              Experiences
+            </div>
+            <a
+              href="https://www.airbnb.com/s/experiences/online"
+              class="header-options__menu"
+              id="header-options__thirdMenu"
+            >
+              Online Experience
+            </a>
+          </div>
+          <div class="header-settings">
+            <div class="header-settings_text">Airbnb your home</div>
+            <i class="fa fa-globe"></i>
+            <div class="header-settings_menu">
+              <i class="fa fa-bars"></i>
+              <i class="fa fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="search-box-wrapper">
+          <div class="search-box">
+            <div class="search-box_big">one</div>
+            <div class="search-box-small">two</div>
+            <div class="search-box-small">three</div>
+            <div class="search-box_big">four</div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <script>
+      document
+        .getElementById("header-options__firstMenu")
+        .addEventListener("click", function () {
+          this.classList.replace(
+            "header-options__menu",
+            "header-options__menu--bold"
+          );
+        });
+      document
+        .getElementById("header-options__secondMenu")
+        .addEventListener("click", function () {
+          this.classList.replace(
+            "header-options__menu",
+            "header-options__menu--bold"
+          );
+        });
+    </script>
+  </body>
+</html>
