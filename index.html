@@ -12,10 +12,12 @@
     />
   </head>
   <body>
-    <section class="main-container">
-      <div class="top-header">
+    <div class="top-header">
+      <section class="main-container">
         <u> Learn about Guest Favorites, the most loved homes on Airbnb </u>
-      </div>
+      </section>
+    </div>
+    <section class="main-container">
       <header class="bot-header">
         <div class="bot-header-first-row">
           <div class="header-logo">
@@ -50,34 +52,478 @@
             </div>
           </div>
         </div>
-        <div class="search-box-wrapper">
-          <div class="search-box">
-            <div class="search-box_big">one</div>
-            <div class="search-box-small">two</div>
-            <div class="search-box-small">three</div>
-            <div class="search-box_big">four</div>
+        <div class="search-box-wrapper" id="search-box-wrapper">
+          <div class="search-box" id="search-box-wrapper-id">
+            <div
+              class="dropdown-parent search-box_big-wrapper remove-white"
+              id="whereId"
+              onclick="showWhite(this)"
+            >
+              <div class="search-box_big">Where</div>
+              <input placeholder="search destinations" />
+            </div>
+
+            <div class="vertical_line"></div>
+
+            <div
+              class="search-box_small-wrapper remove-white"
+              onclick="showWhite(this)"
+            >
+              <div class="search-box_small">Check-in</div>
+              <p>Add dates</p>
+            </div>
+
+            <div class="vertical_line"></div>
+
+            <div
+              class="search-box_small-wrapper remove-white"
+              onclick="showWhite(this)"
+            >
+              <div class="search-box_small">Check-out</div>
+              <p>Add dates</p>
+            </div>
+            <div class="vertical_line"></div>
+
+            <div
+              class="search-box_magnifying-glass-wrapper remove-white"
+              onclick="showWhite(this)"
+            >
+              <div class="search-box_magnifying-glass">
+                <div class="search-box_big">Who</div>
+                <p>Add guests</p>
+              </div>
+              <div>
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+
+            <div class="dropdown-modal">
+              <h3 class="dropdown-modal_heading">
+                <strong>Search by region</strong>
+              </h3>
+              <div class="dropdown_prototype-wrapper">
+                <div class="dropdown_prototype"></div>
+                <div class="dropdown_prototype"></div>
+                <div class="dropdown_prototype"></div>
+              </div>
+              <div class="dropdown_prototype-wrapper">
+                <div class="dropdown_prototype"></div>
+                <div class="dropdown_prototype"></div>
+                <div class="dropdown_prototype"></div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
     </section>
+    <hr class="horizontal-rule" />
+    <section class="icons-row">
+      <div class="icons-only">
+        <i class="fa fa-chevron-left"></i>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
 
-    <script>
-      document
-        .getElementById("header-options__firstMenu")
-        .addEventListener("click", function () {
-          this.classList.replace(
-            "header-options__menu",
-            "header-options__menu--bold"
-          );
-        });
-      document
-        .getElementById("header-options__secondMenu")
-        .addEventListener("click", function () {
-          this.classList.replace(
-            "header-options__menu",
-            "header-options__menu--bold"
-          );
-        });
-    </script>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <div class="globe-container">
+          <i class="fa fa-globe fa-2x"></i>
+          <p>globe</p>
+        </div>
+        <i class="fa fa-chevron-right"></i>
+      </div>
+      <div class="filter-wrapper">
+        <div class="filter">
+          <i class="fa fa-filter"></i>
+          <p>filters</p>
+        </div>
+        <div class="display-div">
+          <p>display total before taxes</p>
+          <i class="fa fa-toggle-off"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="pics-wrapper">
+      <div class="pics-row">
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics is-favourite">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+      </div>
+      <div class="pics-row">
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics is-favourite">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+      </div>
+      <div class="pics-row">
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+        <div class="pics-column">
+          <div class="pics">
+            <img class="ember_pics" alt="picture" src="./ember.jpg" />
+            <div class="div-over-img">Guest fav</div>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <p>some text</p>
+        </div>
+      </div>
+
+      <div class="continue-exploring">
+        <p>Continue exploring campers</p>
+        <button>Show more</button>
+      </div>
+    </section>
+
+    <section class="footer-wrapper" id="footer">
+      <div class="footer-top">
+        <h3 class="footer-top-heading">Inspiration for future getaways</h3>
+
+        <div class="horizontal-topics-row">
+          <div class="horizontal-topics">
+            <p>popular</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>arts and culture</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>outdoor</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>mountains</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>beach</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>unique stays</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>categories</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>things to do</p>
+          </div>
+          <div class="horizontal-topics">
+            <p>airbnb-friendly apartments</p>
+          </div>
+        </div>
+        <hr class="horizontal-rule" />
+
+        <div class="footer-top-content">
+          <div class="footer-top-content-row">
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+          </div>
+          <div class="footer-top-content-row">
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+          </div>
+          <div class="footer-top-content-row">
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+            <div class="footer-top-content-row-description">
+              <p class="lorem">Lorem</p>
+              <p class="epsum">epsum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="horizontal-rule" />
+    <section class="footer-bot-wrapper">
+      <div class="footer-bot">
+        <div class="footer-features">
+          <div class="column-feature">
+            <h5>Support</h5>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+          </div>
+          <div class="column-feature">
+            <h5>Support</h5>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+          </div>
+          <div class="column-feature">
+            <h5>Support</h5>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+          </div>
+        </div>
+
+        <hr class="horizontal-rule" />
+
+        <div class="foot">
+          <div class="terms-and-conditions">
+            <p>&#169; 2024 Airbnb, Inc.</p>
+            <p>Terms</p>
+            <p>Sitemap</p>
+            <p>Privacy.</p>
+            <p>Your privacy choices</p>
+          </div>
+          <div class="language">
+            <div class="foot-globe">
+              <i class="fa fa-globe"></i>
+              <p>English(US)</p>
+            </div>
+            <div>
+              <p>&dollar; USD</p>
+            </div>
+            <div class="social-media">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

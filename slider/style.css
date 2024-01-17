@@ -1,0 +1,41 @@
+.imgDiv {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+
+  overflow: hidden;
+  position: relative;
+}
+
+#imgRoll {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
+
+.img {
+  height: 500px;
+  width: 500px;
+}
+
+.fa-chevron-left {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+.fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+
+.liWrapper{
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
+.li{
+  margin: 5px;
+}
