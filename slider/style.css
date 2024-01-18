@@ -22,20 +22,28 @@
   position: absolute;
   top: 50%;
   left: 5%;
+  cursor: pointer;
 }
 .fa-chevron-right {
   position: absolute;
+  cursor: pointer;
   top: 50%;
   right: 5%;
 }
 
-
-.liWrapper{
-  display: flex;
-  flex-direction: row;
-  color: black;
+.ul {
+  position: absolute;
+  top: 85%;
+  left: 40%;
 }
 
-.li{
+.liWrapper {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.li {
   margin: 5px;
+  cursor: pointer;
 }
